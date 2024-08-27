@@ -1,0 +1,33 @@
+POST http://localhost:3000/city/
+Content-Type: application/json
+
+{
+    "name": "Nagpur",
+   "population": 8505823, 
+   "country": "India",
+   "latitude": 41.7123, 
+   "longitude": -75.0055
+  }
+###
+
+  GET http://localhost:3000/cities/Nagpur/
+
+###
+PUT http://localhost:3000/cities/New York/
+Content-Type: application/json
+
+ {
+    "nameChange":"New York City",
+    "population": 8405847,
+     "country": "USA", 
+     "latitude": 40.71256, 
+    "longitude": -74.0066
+ }
+
+
+###
+DELETE http://localhost:3000/cities/Mumbai/
+
+###
+
+GET http://localhost:3000/cities/?offset=0&limit=1&search_q=Mumbai&order_by=population&order=DESC
